@@ -1,10 +1,11 @@
 import React from "react";
-import Key from "./key";
 
-function Display() {
+function Display(props) {
+  // console.log(props);
+
   return (
     <div id="display">
-      <Key />
+      <p>{props.id}</p>
     </div>
   );
 }
