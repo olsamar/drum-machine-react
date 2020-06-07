@@ -1,0 +1,42 @@
+body {
+  background: #857f74;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#display {
+  width: 7rem;
+  height: 4rem;
+  background: #6f6866;
+  border: 2px solid #38302e;
+  margin-bottom: 3rem;
+}
+
+#drumPadPanel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.drum-pad {
+  width: 4rem;
+  height: 4rem;
+  background: #38302e;
+  border: 1px solid #6f6866;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0.3rem;
+}
+
+span {
+  font-size: 0.7rem;
+}
