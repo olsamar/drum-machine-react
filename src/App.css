@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 body {
   background: #857f74;
+  --bgcolor: #38302e;
+  --font: "Audiowide", cursive;
 }
 
+header {
+  font-family: var(--font);
+  color: #fff;
+  background: var(--bgcolor);
+  padding: 0 0.9rem;
+  letter-spacing: 0.1rem;
+}
 #drum-machine {
   display: flex;
   flex-direction: column;
@@ -14,9 +25,10 @@ body {
   height: 3rem;
   background: #6f6866;
   border: 2px solid #38302e;
-  margin-bottom: 3rem;
+  margin: 3rem 1rem;
   text-align: center;
   color: gainsboro;
+  font-family: var(--font);
 }
 
 #drumPadPanel {
@@ -26,14 +38,22 @@ body {
   align-self: stretch;
 }
 
-.drum-pad {
+.drum-pad,
+.playing {
   width: 4rem;
-  height: 4rem;
-  padding-top: 1rem;
-  background: #38302e;
+  /* height: 4rem; */
+  padding: 1rem 0;
+  background: var(--bgcolor);
   border: 3px solid #6f6866;
   color: white;
   text-align: center;
+  vertical-align: middle;
+  font-family: var(--font);
   font-size: 2rem;
   cursor: pointer;
+}
+
+.playing {
+  transform: scale(1.1, 1.1);
+  border-color: gainsboro;
 }
