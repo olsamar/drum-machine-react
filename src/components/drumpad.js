@@ -26,7 +26,7 @@ function DrumPad(props) {
     props.onPlay(props.id);
   };
 
-  const source = `/sounds/${props.audiosource}`;
+  const source = `${process.env.PUBLIC_URL}/sounds/${props.audiosource}`;
 
   return (
     <div className={props.className} id={props.id} onClick={audioPlay}>
