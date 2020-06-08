@@ -2,9 +2,9 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
-      <h1>Drum Machine</h1>
-    </div>
+    <header>
+      <h1>DRUM MACHINE</h1>
+    </header>
   );
 }
 
