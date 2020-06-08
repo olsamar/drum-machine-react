@@ -66,7 +66,6 @@ function App() {
       setDisplaySound((prevState) => prevState.slice(1));
     }, 300);
   };
-  // console.log(onPlay);
 
   const currentSound = displaySound[displaySound.length - 1];
 
