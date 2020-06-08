@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/header";
 import Display from "./components/display";
 import DrumPad from "./components/drumpad";
@@ -58,21 +58,30 @@ const drumPadElements = [
 ];
 
 function App() {
+  const [displaySound, setDisplaySound] = useState("");
+
+  // const clearDisplaySound = () => {
+  //   setTimeout(() => {
+  //     setDisplaySound("");
+  //   }, 1000);
+  // };
+
   const drumPad = drumPadElements.map((element) => (
     <DrumPad
       key={element.drumPadKey}
       drumPadKey={element.drumPadKey}
       id={element.id}
       audiosource={element.audiosource}
+      onPlay={setDisplaySound}
+      // clearDisplaySound={clearDisplaySound}
     />
   ));
-  console.log(drumPadElements.id);
 
   return (
     <div id="drum-machine">
       <Header />
-      <Display />
-      <div id="drumPadPanel">{drumPad}</div>;
+      <Display displaySound={displaySound} />
+      <div id="drumPadPanel">{drumPad}</div>
     </div>
   );
 }

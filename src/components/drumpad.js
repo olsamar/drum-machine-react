@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 
 function DrumPad(props) {
   const audioRef = useRef();
-  console.log(audioRef);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
@@ -18,14 +17,24 @@ function DrumPad(props) {
   };
 
   const audioPlay = () => {
+    if (!audioRef.current.paused) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
     audioRef.current.play();
+    props.onPlay(props.id);
+    setTimeout(() => {
+      props.onPlay("");
+    }, 1000);
   };
+
   const source = `/sounds/${props.audiosource}`;
 
   return (
     <div className="drum-pad" id={props.id} onClick={audioPlay}>
       {props.drumPadKey}
-      {/* <span>{props.id}</span> */}
+
       <audio
         className="clip"
         id={props.drumPadKey}
