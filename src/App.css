@@ -6,37 +6,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 #display {
   width: 7rem;
-  height: 4rem;
+  height: 3rem;
   background: #6f6866;
   border: 2px solid #38302e;
   margin-bottom: 3rem;
+  text-align: center;
+  color: gainsboro;
 }
 
 #drumPadPanel {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-self: stretch;
 }
 
 .drum-pad {
   width: 4rem;
   height: 4rem;
+  padding-top: 1rem;
   background: #38302e;
-  border: 1px solid #6f6866;
+  border: 3px solid #6f6866;
   color: white;
   text-align: center;
-}
-
-h3 {
-  margin-bottom: 0.3rem;
-}
-
-span {
-  font-size: 0.7rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
