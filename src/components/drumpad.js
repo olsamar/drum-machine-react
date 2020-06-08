@@ -24,17 +24,14 @@ function DrumPad(props) {
 
     audioRef.current.play();
     props.onPlay(props.id);
-    setTimeout(() => {
-      props.onPlay("");
-    }, 1000);
   };
 
   const source = `/sounds/${props.audiosource}`;
 
   return (
-    <div className="drum-pad" id={props.id} onClick={audioPlay}>
+    <div className={props.className} id={props.id} onClick={audioPlay}>
       {props.drumPadKey}
-
+      {/* <span>{props.id}</span> */}
       <audio
         className="clip"
         id={props.drumPadKey}

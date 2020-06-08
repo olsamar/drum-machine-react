@@ -58,13 +58,17 @@ const drumPadElements = [
 ];
 
 function App() {
-  const [displaySound, setDisplaySound] = useState("");
+  const [displaySound, setDisplaySound] = useState([]);
 
-  // const clearDisplaySound = () => {
-  //   setTimeout(() => {
-  //     setDisplaySound("");
-  //   }, 1000);
-  // };
+  const onPlay = (id) => {
+    setDisplaySound((prevState) => [...prevState, id]);
+    setTimeout(() => {
+      setDisplaySound((prevState) => prevState.slice(1));
+    }, 300);
+  };
+  // console.log(onPlay);
+
+  const currentSound = displaySound[displaySound.length - 1];
 
   const drumPad = drumPadElements.map((element) => (
     <DrumPad
@@ -72,15 +76,15 @@ function App() {
       drumPadKey={element.drumPadKey}
       id={element.id}
       audiosource={element.audiosource}
-      onPlay={setDisplaySound}
-      // clearDisplaySound={clearDisplaySound}
+      onPlay={onPlay}
+      className={displaySound.includes(element.id) ? "playing" : "drum-pad"}
     />
   ));
 
   return (
     <div id="drum-machine">
       <Header />
-      <Display displaySound={displaySound} />
+      <Display displaySound={currentSound} />
       <div id="drumPadPanel">{drumPad}</div>
     </div>
   );
