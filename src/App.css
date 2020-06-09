@@ -55,10 +55,10 @@ header {
   border: 3px solid #6f6866;
   color: white;
   text-align: center;
-
   font-family: var(--font);
   font-size: 2rem;
   cursor: pointer;
+  margin: 0.15rem 0 0.15rem 1.5rem;
 }
 
 span {
@@ -67,7 +67,7 @@ span {
   width: 100%;
   text-align: center;
   display: inline-block;
-  color: var(--bgcolor);
+  color: #38302e;
 }
 
 .playing {
