@@ -38,6 +38,14 @@ header {
   align-self: stretch;
 }
 
+@media only screen and (max-width: 769px) {
+  #drumPadPanel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
 .drum-pad,
 .playing {
   width: 4rem;
@@ -47,10 +55,19 @@ header {
   border: 3px solid #6f6866;
   color: white;
   text-align: center;
-  vertical-align: middle;
+
   font-family: var(--font);
   font-size: 2rem;
   cursor: pointer;
+}
+
+span {
+  font-size: 0.7rem;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: var(--bgcolor);
 }
 
 .playing {
