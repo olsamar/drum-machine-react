@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/drum-machine-react/static/css/main.b893ddea.chunk.css",
-    "main.js": "/drum-machine-react/static/js/main.7db38453.chunk.js",
-    "main.js.map": "/drum-machine-react/static/js/main.7db38453.chunk.js.map",
+    "main.css": "/drum-machine-react/static/css/main.33685202.chunk.css",
+    "main.js": "/drum-machine-react/static/js/main.8f2eb637.chunk.js",
+    "main.js.map": "/drum-machine-react/static/js/main.8f2eb637.chunk.js.map",
     "runtime-main.js": "/drum-machine-react/static/js/runtime-main.bf6624f9.js",
     "runtime-main.js.map": "/drum-machine-react/static/js/runtime-main.bf6624f9.js.map",
     "static/js/2.efd4ffe6.chunk.js": "/drum-machine-react/static/js/2.efd4ffe6.chunk.js",
     "static/js/2.efd4ffe6.chunk.js.map": "/drum-machine-react/static/js/2.efd4ffe6.chunk.js.map",
     "index.html": "/drum-machine-react/index.html",
-    "precache-manifest.04d3e78964aff6a0ef37ccde301fb2ad.js": "/drum-machine-react/precache-manifest.04d3e78964aff6a0ef37ccde301fb2ad.js",
+    "precache-manifest.615b9f7292b796123011b7a07fbcfa77.js": "/drum-machine-react/precache-manifest.615b9f7292b796123011b7a07fbcfa77.js",
     "service-worker.js": "/drum-machine-react/service-worker.js",
-    "static/css/main.b893ddea.chunk.css.map": "/drum-machine-react/static/css/main.b893ddea.chunk.css.map",
+    "static/css/main.33685202.chunk.css.map": "/drum-machine-react/static/css/main.33685202.chunk.css.map",
     "static/js/2.efd4ffe6.chunk.js.LICENSE.txt": "/drum-machine-react/static/js/2.efd4ffe6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bf6624f9.js",
     "static/js/2.efd4ffe6.chunk.js",
-    "static/css/main.b893ddea.chunk.css",
-    "static/js/main.7db38453.chunk.js"
+    "static/css/main.33685202.chunk.css",
+    "static/js/main.8f2eb637.chunk.js"
   ]
 }
