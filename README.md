@@ -1,6 +1,7 @@
 # Drum Machine
 
-The Drum Machine can be played [here](https://olsamar.github.io/drum-machine-react/)
+The Drum Machine can be played [here](https://olsamar.github.io/drum-machine-react/).
+
 This is one of five projects within the [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/) FreeCodeCamp course. The app is written with React.
 
 ## Requirements:
